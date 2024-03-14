@@ -1,20 +1,20 @@
-This project explores techniques for deploying large neural network models (SLMs) on resource-constrained edge devices like Microsoft's Phi-2. The focus is on improving the efficiency of SLMs through quantization and fine-tuning while maintaining accuracy.
+## Quantization and Fine-Tuning of SLMs for Edge Deployment
 
-Key Techniques:
+This project explores techniques for efficiently running Speech Language Models (SLMs) on resource-constrained edge devices, such as the Microsoft Phi-2 model. The focus is on achieving both high accuracy and low computational footprint through quantization and fine-tuning.
 
-Quantization: Reducing the bit-width of weights and activations in the SLM to lower memory footprint and computational cost. This project likely explores methods like Quantized Linear Operations Rounding Accumulation (QLORA) for achieving this.
-Gradient Low-Rank Projection: Compressing gradients during the fine-tuning process to reduce communication overhead and improve training efficiency on edge devices.
-Project Goal:
+*Techniques Investigated:*
 
-The overall objective is to enable efficient execution of SLMs on edge devices by:
+* *QLORA:* This quantization method leverages low-rank approximations to represent weights in SLMs with minimal accuracy loss.
+* *Gradient Low-Rank Projection:* This technique reduces the dimensionality of gradients during training, enabling efficient fine-tuning of pre-trained SLMs on edge devices.
 
-Reducing model size through quantization.
-Optimizing the training process for resource-limited environments using gradient compression techniques.
-Benefits:
+*Project Goals:*
 
-Enables deployment of powerful SLMs on edge devices with limited resources.
-Reduces power consumption and latency for on-device inference.
-Potential Applications:
+* Develop a framework for quantizing and fine-tuning SLMs for deployment on edge devices.
+* Evaluate the effectiveness of QLORA and gradient low-rank projection in reducing model size and computational complexity while maintaining accuracy.
+* Optimize SLMs for real-time inference on resource-limited devices like the Microsoft Phi-2.
 
-Real-time image/speech recognition on mobile devices.
-Low-power intelligent sensors in Internet-of-Things (IoT) applications.
+*Potential Benefits:*
+
+* Enables deployment of powerful SLMs on edge devices, facilitating applications like real-time voice assistants and local language processing.
+* Reduces reliance on cloud infrastructure for SLM inference, improving privacy and reducing latency.
+* Contributes to the development of more efficient and portable SLMs for broader real-world applications.
