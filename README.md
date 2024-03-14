@@ -2,7 +2,7 @@
 
 This project explores techniques for efficiently running Speech Language Models (SLMs) on resource-constrained edge devices, such as the Microsoft Phi-2 model. The focus is on achieving both high accuracy and low computational footprint through quantization and fine-tuning.
 
-# Techniques Investigated:
+## Techniques Investigated:
 
 * *QLORA:* This quantization method leverages low-rank approximations to represent weights in SLMs with minimal accuracy loss.
 * *Gradient Low-Rank Projection:* This technique reduces the dimensionality of gradients during training, enabling efficient fine-tuning of pre-trained SLMs on edge devices.
