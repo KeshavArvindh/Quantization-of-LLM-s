@@ -1,0 +1,54 @@
+{
+  "_name_or_path": "microsoft/phi-2",
+  "architectures": [
+    "PhiForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "microsoft/phi-2--configuration_phi.PhiConfig",
+    "AutoModelForCausalLM": "microsoft/phi-2--modeling_phi.PhiForCausalLM"
+  },
+  "bos_token_id": 50256,
+  "embd_pdrop": 0.0,
+  "eos_token_id": 50256,
+  "hidden_act": "gelu_new",
+  "hidden_size": 2560,
+  "initializer_range": 0.02,
+  "intermediate_size": 10240,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 2048,
+  "model_type": "phi",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "partial_rotary_factor": 0.4,
+  "qk_layernorm": false,
+  "quantization_config": {
+    "batch_size": 1,
+    "bits": 4,
+    "block_name_to_quantize": "model.layers",
+    "damp_percent": 0.1,
+    "dataset": "wikitext2",
+    "desc_act": false,
+    "disable_exllama": true,
+    "group_size": 128,
+    "model_seqlen": 4096,
+    "module_name_preceding_first_block": [
+      "model.embed_tokens",
+      "model.embed_dropout"
+    ],
+    "pad_token_id": null,
+    "quant_method": "gptq",
+    "sym": true,
+    "true_sequential": true,
+    "use_cuda_fp16": true
+  },
+  "resid_pdrop": 0.1,
+  "rope_scaling": null,
+  "rope_theta": 10000.0,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float16",
+  "transformers_version": "4.39.0",
+  "use_cache": true,
+  "vocab_size": 51200
+}

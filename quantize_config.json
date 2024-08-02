@@ -1,0 +1,20 @@
+{
+  "bits": 4,
+  "dataset": "wikitext2",
+  "group_size": 128,
+  "damp_percent": 0.1,
+  "desc_act": false,
+  "sym": true,
+  "true_sequential": true,
+  "use_cuda_fp16": true,
+  "model_seqlen": 4096,
+  "block_name_to_quantize": "model.layers",
+  "module_name_preceding_first_block": [
+    "model.embed_tokens",
+    "model.embed_dropout"
+  ],
+  "batch_size": 1,
+  "pad_token_id": null,
+  "disable_exllama": false,
+  "quant_method": "gptq"
+}
